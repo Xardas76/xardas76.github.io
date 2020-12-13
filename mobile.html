@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портал об ОС</title>
+<link rel="shortcut icon" href="res\icon.png" type="image/x-icon">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: #B6D5FF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #81EE8A;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.head {
+  background-color:#B6D5FF;
+  padding:15px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div class="head">
+  <h2>Мобильные ОС</h2>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Главная</a>
+    <a href="windows.html">Windows</a>
+    <a href="mac.html">Mac OS</a>
+    <a href="linux.html">Linux</a>
+    <a href="mobile.html" style="background-color: #FF665C;">Мобильные системы</a>
+    <a href="form.html">Оставить заявку</a>
+  </div>
+
+
+    <div class="main">
+      <img src="res\ios_vs_android.png" style="width:80%; margin-top:8px;">
+      <p>В современном мире существует огромное разнообразие мобильных устройств. Мобильный — значит переносимый, т.е. сюда мы относим не только сотовые телефоны, но и планшеты, плееры и прочие устройства.</p>
+      <p>Как и у любого компьютерного устройства, у мобильных есть операционные системы.</p>
+      <h3>Android</h3>
+      <p>Это операционная система для смартфонов, планшетов, приставок, нетбуков и других устройств. Является собственностью компании Google и признана самой популярной в мире. 22 октября 2008 года Google объявила об открытии онлайн-магазина приложений для ОС Android — Android Market. Количество приложений для Андроид в данном магазине превышает 1,43 млн. Первая версия ОС вышла в свет в 2008 году на смартфоне HTC и с тех пор неустанно обновляется.</p>
+      <p>Достоинства Android:</p>
+      <ul>
+        <li>быстрая интеграция с сервисами google</li>
+        <li>наличие файловой системы</li>
+        <li>абсолютная независимость от аппаратной начинки мобильного устройства</li>
+        <li>Android является системой с открытым кодом</li>
+        <li>легкость установки приложений с разных ресурсов</li>
+        <li>широкие возможности индивидуализации</li>
+      </ul>
+      <img src="res\androids.jpg" style="width:70%">
+      <h3>iOS</h3>
+      <p>iOS — операционная система для смартфонов, планшетов и др. устройств, разработанная компанией Apple исключительно для своих устройств.</p>
+      <p>Пользовательский интерфейс iOS основан на концепции прямого взаимодействия с использованием жестов «мультитач». Элементы управления интерфейсом состоят из ползунков, переключателей и кнопок. Впервые операционная система была представлена в 2007 году.</p>
+      <p>Достоинства системы от Apple:</p>
+        <ul>
+          <li>качество поставляемых приложений</li>
+          <li>доступность обновлений сразу после выпуска новой версии ОС для всех устройств одновременно</li>
+          <li>продолжительная поддержка старых устройств</li>
+          <li>разработчики в первую очередь анонсируют свои приложения для iOS</li>
+          <li>удобство использования, удобство интерфейса</li>
+          <li>акцент на надежность и качество ОС</li>
+        </ul>
+        <img src="res\apple.jpg" style="width:35%">
+    </div>
+
+    <div class="right">
+      <h4>Windows Phone</h4>
+      <p>Компания Microsoft несколько раз предпринимала попытки создания собственной мобильной операционной системы. ОС Windows Mobile была распространена в первой половине 2010-ых, и являлась ОС смартфонов серии Nokia Lumia. Были и другие проекты, вроде Windows 10 Mobile. Однако к 2020 году Microsoft полностью пректратила поддержку и обновление всех своих мобильных ОС.</p>
+    </div>
+  </div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Дьяченко Иван Олегович, РТУ МИРЭА 2020</div>
+
+</body>
+</html>

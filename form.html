@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портал об ОС</title>
+<link rel="shortcut icon" href="res\icon.png" type="image/x-icon">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: #B6D5FF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #81EE8A;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.head {
+  background-color:#B6D5FF;
+  padding:15px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+  <script>
+  var checkForm = function(event) {
+    var phone = document.getElementById('phone').value;
+    var email = document.getElementById('email').value;
+    var name = document.getElementById('name').value;
+
+    var radioEmail = document.getElementById('radio-email');
+    var radioPhone = document.getElementById('radio-phone');
+    var radioMessenger = document.getElementById('radio-messenger');
+
+    if (radioPhone.checked && !phone) {
+      alert("Укажите телефон, по которому мы можем с вами связаться");
+      return;
+    }
+    else if (radioMessenger.checked && !phone) {
+      alert("Укажите телефон, к которому привязан один из мессенджеров");
+      return;
+    }
+    else if (radioEmail.checked && !email) {
+      alert("Укажите вашу электронную почту");
+      return;
+    }
+    if (!(radioMessenger.checked || radioEmail.checked || radioPhone.checked)) {
+      alert("Выберете один из способов связи");
+      return;
+    }
+
+    if (phone.length > 12 || phone.length < 11) {
+      alert("Укажите телефон в стандартном формате, без символов (как указано в подсказке)");
+      return;
+    }
+
+    alert ("Большое спасибо " + name + ". Мы свяжемся с вами в ближайшее время");
+  }
+  </script>
+
+<div class="head">
+  <h2>Свяжитесь с нами</h2>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Главная</a>
+    <a href="windows.html">Windows</a>
+    <a href="mac.html">Mac OS</a>
+    <a href="linux.html">Linux</a>
+    <a href="mobile.html">Мобильные системы</a>
+    <a href="form.html" style="background-color: #FF665C;">Оставить заявку</a>
+  </div>
+
+  <div class="main">
+    <img src="res/form.jpg" width="20%">
+    <form onsubmit="checkForm();">
+      <fieldset>
+  <div class="content">
+    <hr>
+    <div>
+      <label for="name"><b>Как вас зовут?</b></label>
+      <input type="text" placeholder="Иван" id="name" required>
+    </div>
+
+    <label for="question_type"><b>Какой вопрос вас интересует</b></label>
+    <select>
+      <option >Индивидуальная поддержка</option>
+      <option >Корпоротивный заказ</option>
+      <option >Техническая консультация</option>
+      <option >Другое</option>
+    </select>
+    <hr>
+
+    <label for="question"><b>Кратко опишите ваш запрос</b></label><br>
+    <textarea name="question" rows="5" cols="33" placeholder="Я нуждаюсь в ..." required></textarea>
+    <hr>
+
+    <p><label for="connect_type"><b>Как с вами лучше связаться?</b></label></p>
+    <input type="radio" id="radio-phone" name="connect">
+    <label>По телефону</label><br>
+    <input type="radio" id="radio-messenger" name="connect">
+    <label>Через мессенджер (WhatsApp, Viber, Telegram)</label><br>
+    <input type="radio" id="radio-email" name="connect">
+    <label>По электронной почте</label><br><hr>
+
+    <div>
+      <label><b>Телефон</b></label>
+      <input type="text" id="phone" placeholder="79876543221">
+    </div><hr>
+
+    <div>
+      <label for="email"><b>Электронная почта</b></label>
+      <input type="text" id="email" placeholder="hello@m.ru">
+    </div><br>
+
+    <input type="submit" value="Подтвердить">
+  </div>
+</fieldset>
+
+    </form>
+  </div>
+
+  <div class="right">
+    <h4>Чем мы можем помочь?</h4>
+    <p>Если у вас возникли трудности при настройке или управлении операционной системы, если вы не можете определиться с выбором ОС для ваших задач, будь то индивидуальное пользование или крупный коммерческий проект, мы можем предоставить консультационные услуги или провести технические работы.</p>
+    </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Дьяченко Иван Олегович, РТУ МИРЭА 2020</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портал об ОС</title>
+<link rel="shortcut icon" href="res\icon.png" type="image/x-icon">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: #B6D5FF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #81EE8A;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.head {
+  background-color:#B6D5FF;
+  padding:15px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div class="head">
+  <h1>Современные операционные системы</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html" style="background-color: #FF665C;">Главная</a>
+    <a href="windows.html">Windows</a>
+    <a href="mac.html">Mac OS</a>
+    <a href="linux.html">Linux</a>
+    <a href="mobile.html">Мобильные системы</a>
+    <a href="form.html">Оставить заявку</a>
+  </div>
+
+  <div class="main">
+    <p><b>Операционная система (ОС)</b> — комплекс программ, обеспечивающий управление аппаратными средствами компьютера, организующий работу с файлами и выполнение прикладных программ, осуществляющий ввод и вывод данных. Проще говоря, операционная система — это главная программа, которая запускается при включении компьютера. Она позволяет пользователям компьютера работать с файлами, пользоваться Интернетом и запускать в окошках другие программы, игры, фильмы, музыку.</p>
+    <img src="res\main1.jpg" id="img_row" style="width:60%">
+    <p>На сегодняшний день, операционная система — это первый и основной набор программ, загружающийся в компьютер. Помимо вышеуказанных функций ОС может осуществлять и другие, например, предоставление общего пользовательского интерфейса.</p>
+    <p>Сегодня наиболее известными операционными системами являются ОС семейства Microsoft Windows и UNIX-подобные системы.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hb9CTGSJm88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="right">
+    <h4>О сайте</h4>
+    <p>На нашем сайте вы можете ознакомиться с текущими версиями наиболее популярных операционных систем и выбрать наиболее подходящую для вас. Наши специалисты мобрали самые необходимые сведения, чтобы помочь вам определиться с операционной системой.</p>
+    <p>Также вы можете получить консультацию специалиста в сфере ОС, который поможет вам выбрать, установить и настроить ОС для ваших нужд будь то коопоративные проекты или индивидуальной использование. Надеемся, что вы найдёте много полезной информации на нашем портале</p>
+    </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Дьяченко Иван Олегович, РТУ МИРЭА 2020</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портал об ОС</title>
+<link rel="shortcut icon" href="res\icon.png" type="image/x-icon">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color: #B6D5FF;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: #81EE8A;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+.head {
+  background-color:#B6D5FF;
+  padding:15px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div class="head">
+  <h2>ОС Linux</h2>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Главная</a>
+    <a href="windows.html">Windows</a>
+    <a href="mac.html">Mac OS</a>
+    <a href="linux.html" style="background-color: #FF665C;">Linux</a>
+    <a href="mobile.html">Мобильные системы</a>
+    <a href="form.html">Оставить заявку</a>
+  </div>
+
+
+    <div class="main">
+      <p><b>Linux</b> — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты. Как и ядро Linux, системы на его основе как правило создаются и распространяются в соответствии с моделью разработки свободного и открытого программного обеспечения. Linux-системы распространяются в основном бесплатно в виде различных дистрибутивов — в форме, готовой для установки и удобной для сопровождения и обновлений, — и имеющих свой набор системных и прикладных компонентов, как свободных, так, возможно, и собственнических.</p>
+      <img src="res\linux.png" style="width:60%">
+      <h3>Когда стоит использовать GNU/Linux?</h3>
+        <ol>
+          <li>Если GNU/Linux система уже установлена и используется в компании, а выгоды от смены этой ОС на другую, например, FreeBSD не перевесят.</li>
+          <li>Если ПО, с которым вам нужно работать использует специфичные именно для GNU/Linux возможности (например, OpenStack несовместимая с чем-либо иным) – лучше использовать, однозначно, GNU/Linux. Так как переписывать ПО очень дорого.</li>
+          <li>Когда вам нужно выполнить простые задачи. Например, быстро загрузиться, запустить LibreOffice, отредактировать документ, скопировать на флешкe, что-то посмотреть в веб-браузере.</li>
+          <li>Для тех, кто не может позволить себе macOS и Windows, бесплатная свободная ОС (включая множество GNU/Linux дистрибутивов) может стать заменой.</li>
+          <li>Если ваша организация находится под слежкой или она оперирует конфиденциальными данными, то стоит начать использовать преобладающее большинство свободных ОС (в том числе GNU/Linux). Дело в том, что средства слежки или ослабления криптографических средств в них, как правило, не встраивают.</li>
+        </ol>
+      <img src="res\linux_peng.jpg" style="width:35%">
+    </div>
+
+    <div class="right">
+      <p>GNU/Linux стала первой активно используемой свободной UNIX-подобной операционной системы. Уже в 90-х годах ниша серверного программного обеспечения (ПО) массово включала в себя эту ОС. Сейчас GNU/Linux системы используются на преобладающем количестве серверов Интернета и являются де-факто системой для суперкомпьютеров. Это продемонстрировало жизнеспособность и вес движения свободного программного обеспечения.</p>
+    </div>
+  </div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Дьяченко Иван Олегович, РТУ МИРЭА 2020</div>
+
+</body>
+</html>
